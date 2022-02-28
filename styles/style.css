@@ -6,8 +6,9 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   display: flex;
+  flex-wrap: wrap;
 }
 
 div {
@@ -16,7 +17,8 @@ div {
 
 .text {
   color: black;
-  /*font-family: 'Helvetica Neue', Arial, sans-serif;*/
+  margin: 0;
+  text-decoration: none;
   /*font-style: normal;*/
   /*margin: 0;*/
   /*text-decoration: none;*/
@@ -24,12 +26,13 @@ div {
 
 .header {
   height: 100vh;
+  width: 100%;
+  background-color: #f2f2f2;
   min-height: 600px;
   max-height: 756px;
-  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  position: relative;
+
   /* выше установили ограничения для секции */
 }
 
@@ -47,6 +50,7 @@ div {
   width: 730px;
   font-size: 102px;
   font-weight: bold;
+  line-height: 96px;
   align-self: center;
   margin-left: 64px;
   z-index: 8;
@@ -57,8 +61,14 @@ div {
   left: 64px;
   bottom: 30px;
   width: 388px;
+  line-height: 25px;
+  font-weight: normal;
   z-index: 7;
 
+}
+
+.header__link {
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -68,8 +78,6 @@ div {
   width: 765px;
   height: 608px;
   z-index: 4;
-  justify-content: flex-end;
-
 
 }
 
@@ -78,9 +86,6 @@ div {
   height: 608px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-position: right;
-
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -101,4 +106,16 @@ div {
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.description {
+  width: 80%;
+  display: flex;
+  position: relative;
+
+
+}
+
+.two-columns {
+  min-width: 175px;
 }
