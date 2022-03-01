@@ -7,12 +7,12 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  display: flex;
-  flex-wrap: wrap;
+
+
 }
 
-div {
-  border:1px solid red;
+div, h1 p {
+  outline:1px solid red;
 }
 
 .text {
@@ -32,7 +32,9 @@ div {
   max-height: 756px;
   display: flex;
   position: relative;
-
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
   /* выше установили ограничения для секции */
 }
 
@@ -51,7 +53,7 @@ div {
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
-  align-self: center;
+  /*align-self: center;*/
   margin-left: 64px;
   z-index: 8;
 }
@@ -109,13 +111,47 @@ div {
 }
 
 .description {
-  width: 80%;
   display: flex;
-  position: relative;
+  justify-content: space-around;
 
 
 }
 
 .two-columns {
+  width: 80%;
+  display: flex;
   min-width: 175px;
+  position: absolute;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom:  100px;
+
+}
+
+.two-columns__brief {
+  width: 175px;
+  height: 1.2px;
+  font-size: 18px;
+  color: #2f80ed;
+
+}
+
+.two-columns__main-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
 }
