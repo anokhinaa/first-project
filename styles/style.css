@@ -11,7 +11,7 @@
 
 }
 
-div, h1, p {
+div, h1, h2, h3, p {
   outline: 1px solid red;
 }
 
@@ -216,5 +216,39 @@ div, h1, p {
   font-weight: normal;
   text-decoration: none;
   margin: 0;
-
 }
+
+/* . feinman {*/
+/*   height: 890px;*/
+/*   display: flex;*/
+/*   position: relative;*/
+/*   flex-direction: column;*/
+/*   justify-content: center;*/
+/*}*/
+
+/*.feinman_img {*/
+/*  width: 867px;*/
+/*  height: 637px;*/
+/*  !*position: absolute;*!*/
+/*  background-position: left;*/
+/*  background-size: contain;*/
+/*  background-repeat: no-repeat;*/
+/*  z-index: 0;*/
+
+/*}*/
+
+/*.feinman__title {*/
+/*  line-height: 1.15;*/
+/*  font-size: 120px;*/
+/*  font-weight: bold;*/
+/*  text-decoration: none;*/
+/*  width: 648px;*/
+/*  margin-top: 100px;*/
+/*  margin-bottom: 70px;*/
+/*  z-index: 2;*/
+/*}*/
+
+/*.feinman__subtitle {*/
+/*  line-height: 51px;*/
+/*  font-size: 36px;*/
+/*}*/
